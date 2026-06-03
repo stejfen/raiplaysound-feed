@@ -80,6 +80,18 @@ const audiobooks = [
   {
     title: 'Arancia meccanica',
     path: 'audiolibri/aranciameccanica'
+  },
+  {
+    title: 'Le meraviglie del Duemila',
+    path: 'audiolibri/lemeravigliedelduemila'
+  }
+  {
+    title: 'Amatissima',
+    path: 'audiolibri/amatissima'
+  },
+  {
+    title: 'Bel Ami',
+    path: 'audiolibri/belami'
   }
 ]
 
