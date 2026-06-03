@@ -78,10 +78,6 @@ const podcasts = [
 
 const audiobooks = [
   {
-    title: 'Arancia meccanica',
-    path: 'audiolibri/aranciameccanica'
-  },
-  {
     title: 'Le meraviglie del Duemila',
     path: 'audiolibri/lemeravigliedelduemila'
   },
