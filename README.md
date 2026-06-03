@@ -35,7 +35,9 @@ Questo progetto è una evoluzione di un mio [precedente repository](https://gith
 
 | Audiolibro | Feed RSS |
 |------------|----------|
-| Arancia meccanica | https://giuliomagnifico.github.io/raiplaysound-feed/rss/audiolibri/aranciameccanica.xml |
+| Amatissima | https://giuliomagnifico.github.io/raiplaysound-feed/rss/audiolibri/amatissima.xml |
+| Bel Ami | https://giuliomagnifico.github.io/raiplaysound-feed/rss/audiolibri/belami.xml |
+| Le meraviglie del Duemila | https://giuliomagnifico.github.io/raiplaysound-feed/rss/audiolibri/lemeravigliedelduemila.xml |
 
 ## Abbonarsi o aggiungere un feed
 
