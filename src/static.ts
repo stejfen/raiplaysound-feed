@@ -7,6 +7,10 @@ const BASE_URL = 'https://giuliomagnifico.github.io/raiplaysound-feed'
 
 const podcasts = [
   {
+    title: 'Il ruggito del coniglio',
+    path: '/programmi/ilruggitodelconiglio'
+  },
+  {
     title: 'Radio3 Scienza',
     path: 'programmi/radio3scienza'
   },
