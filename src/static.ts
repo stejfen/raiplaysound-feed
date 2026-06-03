@@ -84,7 +84,7 @@ const audiobooks = [
   {
     title: 'Le meraviglie del Duemila',
     path: 'audiolibri/lemeravigliedelduemila'
-  }
+  },
   {
     title: 'Amatissima',
     path: 'audiolibri/amatissima'
