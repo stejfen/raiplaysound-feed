@@ -3,12 +3,12 @@ import path from 'path'
 import { buildFeed } from './feed.js'
 import { initCache } from './cache.js'
 
-const BASE_URL = 'https://giuliomagnifico.github.io/raiplaysound-feed'
+const BASE_URL = 'https://stejfen.github.io/raiplaysound-feed'
 
 const podcasts = [
   {
     title: 'Il ruggito del coniglio',
-    path: '/programmi/ilruggitodelconiglio'
+    path: 'programmi/ilruggitodelconiglio'
   },
   {
     title: 'Radio3 Scienza',
@@ -18,14 +18,6 @@ const podcasts = [
     title: 'Zapping',
     path: 'programmi/zapping'
   },
-    {
-    title: 'GR1',
-    path: 'programmi/gr1'
-  },
-    {
-    title: 'GR Friuli Venezia Giulia',
-    path: 'programmi/grfriuliveneziagiulia'
-  },
   {
     title: "Radio anch'io",
     path: 'programmi/radioanchio'
@@ -33,10 +25,6 @@ const podcasts = [
   {
     title: 'Radio3 Mondo',
     path: 'programmi/radio3mondo'
-  },
-  {
-    title: 'America7',
-    path: 'programmi/america7'
   },
   {
     title: 'Eta Beta',
@@ -78,12 +66,308 @@ const podcasts = [
 
 const audiobooks = [
   {
-    title: 'Le meraviglie del Duemila',
+    title: 'Emilio Salgari - Le meraviglie del Duemila',
     path: 'audiolibri/lemeravigliedelduemila'
   },
   {
-    title: 'Amatissima',
+    title: 'Giancarlo Liviano D`Arcangelo - Andai, dentro la notte illuminata',
+    path: 'audiolibri/andaidentrolanotteilluminata'
+  },
+  {
+    title: 'Toni Morrison - Amatissima',
     path: 'audiolibri/amatissima'
+  },
+  {
+    title: 'Achille Giovanni Cagna - Alpinisti ciabattoni',
+    path: 'audiolibri/alpinisticiabattoni'
+  },
+  {
+    title: 'Grazia Deledda - Canne al vento',
+    path: 'audiolibri/cannealvento'
+  },
+  {
+    title: 'Grazia Deledda - Cenere',
+    path: 'audiolibri/cenere'
+  },
+  {
+    title: 'Mario Rigoni Stern - Chissà dove ero quel 25 aprile',
+    path: 'audiolibri/chissadoveroquel25aprile'
+  },
+  {
+    title: 'Luigi Pirandello Ciàula scopre la luna',
+    path: 'audiolibri/ciaulascoprelaluna'
+  },
+  {
+    title: 'Autori Vari - Cattivo Natale',
+    path: 'audiolibri/cattivonatale'
+  },
+  {
+    title: 'Primo Levi - Cristo si è fermato a Eboli',
+    path: 'audiolibri/cristosiefermatoaeboli'
+  },
+  {
+    title: 'Mikhail Bulgakov - Cuore di cane',
+    path: 'audiolibri/cuoredicane'
+  },
+  {
+    title: 'Joseph Conrad - Cuore di tenebra',
+    path: 'audiolibri/cuoreditenebra'
+  },
+  {
+    title: 'Giovanni Boccaccio - Decamerone',
+    path: 'audiolibri/decamerone'
+  },
+  {
+    title: 'Raymond Carver - Dì alle donne che usciamo',
+    path: 'audiolibri/dialledonnecheusciamo'
+  },
+  {
+    title: 'Ernest Hemingway - Dieci indiani e campo indiano',
+    path: 'audiolibri/dieciindianiecampoindiano'
+  },
+  {
+    title: 'Raymond Carver - Distanza',
+    path: 'audiolibri/distanza'
+  },
+  {
+    title: 'Arthur Schnitzler - Doppio Sogno',
+    path: 'audiolibri/doppiosogno'
+  },
+    {
+    title: 'Knut Hamsun - Fame',
+    path: 'audiolibri/fame'
+  },
+  {
+    title: 'Antonio Gramsci - Fiabe dei Fratelli Grimm',
+    path: 'audiolibri/fiabedeifratelligrimm'
+  },
+  {
+    title: 'Vitaliano Brancati - Gli anni perduti',
+    path: 'audiolibri/glianniperduti'
+  },
+  {
+    title: 'Henry James - Giro di vite',
+    path: 'audiolibri/girodivite'
+  },
+  {
+    title: 'Ödön von Horváth - Gioventù senza dio',
+    path: 'audiolibri/gioventusenzadio'
+  },
+  {
+    title: 'Giorgio Bassani - Gli occhiali d`oro',
+    path: 'audiolibri/gliocchialidoro'
+  },
+  {
+    title: 'Ernest Hemingway - Grande fiume dai due cuori',
+    path: 'audiolibri/grandefiumedaiduecuori'
+  },
+  {
+    title: 'Giorgio Bassani - Gli ultimi anni di Clelia Trotti',
+    path: 'audiolibri/gliultimiannidicleliatrotti'
+  },
+  {
+    title: 'Bohumil Hrabal - Ho servito il re d`Inghilterra',
+    path: 'audiolibri/hoservitoilredinghilterra'
+  },
+  {
+    title: 'Giovanni Verga - I Malavoglia',
+    path: 'audiolibri/imalavoglia'
+  },
+  {
+    title: 'John Reed - I dieci giorni che sconvolsero il mondo',
+    path: 'audiolibri/idiecigiornichesconvolseroilmondo'
+  },
+  {
+    title: 'Goethe - I dolori del giovane Werther',
+    path: 'audiolibri/idoloridelgiovanewerther'
+  },
+  {
+    title: 'Giuseppe Bandi - I mille da Genova a Capua',
+    path: 'audiolibri/imilledagenovaacapua'
+  },
+  {
+    title: 'Giovanni Manzoni - I promessi sposi',
+    path: 'audiolibri/ipromessisposi'
+  },
+  {
+    title: 'Franz Werfel - I quaranta giorni del Mussa Dagh',
+    path: 'audiolibri/iquarantagiornidelmussadagh'
+  },
+  {
+    title: 'Ferenč Molnar - I ragazzi della Via Pal',
+    path: 'audiolibri/iragazzidellaviapal'
+  },
+  {
+    title: 'Luigi Pirandello - I vecchi e i giovani',
+    path: 'audiolibri/ivecchieigiovani'
+  },
+  {
+    title: 'Marco Polo - Il milione',
+    path: 'audiolibri/ilmilione'
+  },
+  {
+    title: 'Vitaliano Brancati - Il bell`Antonio',
+    path: 'audiolibri/ilbellantonio'
+  },
+  {
+    title: 'Cesare Pavese - Il compagno',
+    path: 'audiolibri/ilcompagno'
+  },
+  {
+    title: 'Guido Morselli - Il comunista',
+    path: 'audiolibri/ilcomunista'
+  },
+  {
+    title: 'Luigi Pirandello - Il fu Mattia Pascal',
+    path: 'audiolibri/ilfumattiapascal'
+  },
+  {
+    title: 'Vamba - Il giornalino di Gianburrasca',
+    path: 'audiolibri/ilgiornalinodigianburrasca'
+  },
+  {
+    title: 'Hermann Hesse - Il giuoco delle perle di vetro',
+    path: 'audiolibri/ilgiuocodelleperledivetro'
+  },
+  {
+    title: 'Salvatore Satta - Il giorno del giudizio',
+    path: 'audiolibri/ilgiornodelgiudizio'
+  },
+  {
+    title: 'Mikhail Bulgakov - Il maestro e Margherita',
+    path: 'audiolibri/ilmaestroemargherita'
+  },
+  {
+    title: 'Nikolaj Gogol - Il mantello',
+    path: 'audiolibri/ilmantello'
+  },
+  {
+    title: 'Charles Dickens - Il mistero di Edwin Drood',
+    path: 'audiolibri/ilmisterodiedwindrood'
+  },
+  {
+    title: 'Matthew G. Lewis - Il monaco',
+    path: 'audiolibri/ilmonaco'
+  },
+  {
+    title: 'Paolo Volponi - Il pianeta irritabile',
+    path: 'audiolibri/ilpianetairritabile'
+  },
+  {
+    title: 'Stendahl - Il rosso e il nero',
+    path: 'audiolibri/ilrossoeilnero'
+  },
+  {
+    title: 'Nikolaj Gogol - Il ritratto',
+    path: 'audiolibri/ilritratto'
+  },
+  {
+    title: 'Oscar Wilde - Il ritratto di Dorian Gray',
+    path: 'audiolibri/ilritrattodidoriangray'
+  },
+  {
+    title: 'Anna Maria Ortese - L`iguana',
+    path: 'aaudiolibri/liguana'
+  },
+  {
+    title: 'Selma Lagerlöf - L`imperatore di Portugallia',
+    path: 'audiolibri/limperatorediportugallia'
+  },
+  {
+    title: 'Italo Svevo - La coscienza di Zeno',
+    path: 'audiolibri/lacoscienzadizeno'
+  },
+    {
+    title: 'Edith Wharton - La finestra della Signora Manstey e altri racconti',
+    path: 'audiolibri/lafinestradellasignoramansteyealtriracconti'
+  },
+  {
+    title: 'Cesare Pavese - La luna e i falò',
+    path: 'audiolibri/lalunaeifalo'
+  },
+  {
+    title: 'Albert Camus - La peste',
+    path: 'audiolibri/lapeste'
+  },
+  {
+    title: 'W. M. Thackeray - Le memorie di Barry Lindon',
+    path: 'audiolibri/lememoriedibarrylindon'
+  },
+  {
+    title: 'Anonimo - Lazarillo de Tormes',
+    path: 'audiolibri/lazarillodetormes'
+  },
+  {
+    title: 'Philip K. Dick - Ma gli androidi sognano le pecore elettriche?',
+    path: 'audiolibri/magliandroidisognanopecoreelettriche'
+  },
+  {
+    title: 'Ivan Aleksandrovič Gončarov - Oblomov',
+    path: 'audiolibri/oblomov'
+  },
+  {
+    title: 'Nikolaj Gogol - Prospettova Nevskij',
+    path: 'audiolibri/prospettivanevskij'
+  },
+  {
+    title: 'Ryunosuke Akutagawa - Racconti',
+    path: 'audiolibri/raccontidiryunosukeakutagawa'
+  },
+  {
+    title: 'Luigi Pirandello - Racconti',
+    path: 'audiolibri/raccontidiluigipirandello'
+  },
+  {
+    title: 'Raymond Carver - Racconti',
+    path: 'audiolibri/raccontidiraymondcarver'
+  },
+  {
+    title: 'Lev Tolstoj - Racconti',
+    path: 'audiolibri/raccontidilevtolstoj'
+  },
+  {
+    title: 'Katherine Mansfield - Racconti',
+    path: 'audiolibri/raccontidikatherinemansfield'
+  },
+  {
+    title: 'Italo Calvino - Racconti',
+    path: 'audiolibri/raccontidiitalocalvino'
+  },
+  {
+    title: 'Franz Kafka - Racconti',
+    path: 'audiolibri/raccontidifranzkafka'
+  },
+  {
+    title: 'Ernest Hemingway - Racconti',
+    path: 'audiolibri/raccontidiernesthemingway'
+  },
+  {
+    title: 'Anton Checov - Racconti',
+    path: 'audiolibri/raccontidiantoncechov'
+  },
+  {
+    title: 'Pier Paolo Pasolini - Ragazzi di vita',
+    path: 'audiolibri/ragazzidivita'
+  },
+    {
+    title: 'Italo Calvino - Ultimo viene il corvo',
+    path: 'audiolibri/ultimovieneilcorvo'
+  },
+  {
+    title: 'Un anno sull`altipiano',
+    path: 'audiolibri/unannosullaltipiano'
+  },
+  {
+    title: 'Pier Paolo Pasolini - Una vita violenta',
+    path: 'audiolibri/unavitaviolenta'
+  },
+  {
+    title: 'Luigi Pirandello - Uno, nessuno, centomila',
+    path: 'audiolibri/unonessunoecentomila'
+  },
+  {
+    title: 'Alexandre Dumas - Venti anni dopo',
+    path: 'audiolibri/ventannidopo'
   },
   {
     title: 'Bel Ami',
