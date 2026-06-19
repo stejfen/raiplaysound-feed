@@ -932,7 +932,7 @@
   "ContentItem-42d4ff40-fb55-47e2-b81b-aecb224b8ede": {
     "mp3": "https://creativemedia4-rai-it.akamaized.net/podcastcdn/Rai/audiocut/29620098_1800.mp4",
     "date": "2026-06-05T08:44:00.000Z",
-    "resolvedAt": 1780652779031
+    "resolvedAt": 1781868097691
   },
   "ContentItem-f6323763-562d-4137-93d9-b329980b59f9": {
     "mp3": "https://creativemedia4-rai-it.akamaized.net/podcastcdn/Rai/audiocut/29641674_1800.mp4",
@@ -978,5 +978,10 @@
     "mp3": "https://creativemedia4-rai-it.akamaized.net/podcastcdn/Rai/audiocut/29721644_1800.mp4",
     "date": "2026-06-18T08:42:00.000Z",
     "resolvedAt": 1781772373971
+  },
+  "ContentItem-ee35ee58-cbff-4a60-a707-c7ad8e4865d5": {
+    "mp3": "https://creativemedia4-rai-it.akamaized.net/podcastcdn/Rai/audiocut/29729754_1800.mp4",
+    "date": "2026-06-19T08:38:00.000Z",
+    "resolvedAt": 1781868095781
   }
 }
