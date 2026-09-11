@@ -2173,5 +2173,10 @@
     "mp3": "https://creativemedia8-rai-it.akamaized.net/podcastcdn/NewsVod/radiofonia/Radio3/26039595.mp3",
     "date": "2025-04-08T15:07:00.000Z",
     "resolvedAt": 1789051969822
+  },
+  "ContentItem-53b65e30-dc82-4658-95cc-51949d327f8b": {
+    "mp3": "https://creativemedia4-rai-it.akamaized.net/podcastcdn/Rai/audiocut/30313131_1800.mp3",
+    "date": "2026-09-11T10:09:00.000Z",
+    "resolvedAt": 1789132465473
   }
 }
